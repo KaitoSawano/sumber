@@ -107,7 +107,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000e993d2aa86cf246a49b"); // 5,050,000
-        consensus.defaultAssumeValid = uint256S("0x00000af54008670df0b12f3cc5b490d29ed9179d289346a23c88736bf8d1eecd"); // 5,050,000
+        consensus.defaultAssumeValid = uint256S("0x00000b0bcb8c1cf828038f24770b748b70b766bf105f12e036b1060083d6ad83"); // 5,050,000
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x0024;
@@ -145,12 +145,12 @@ public:
         nDefaultPort = 7555;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1789039819, 607196, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1791595945, 2380332, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        assert(consensus.hashGenesisBlock == uint256S("0x00000af54008670df0b12f3cc5b490d29ed9179d289346a23c88736bf8d1eecd"));
-        assert(genesis.hashMerkleRoot == uint256S("0x0135365529fdb2bf3360318823e2c5eefaacff616b4c8be0f15e229a6d7d5bc2"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000b0bcb8c1cf828038f24770b748b70b766bf105f12e036b1060083d6ad83"));
+        assert(genesis.hashMerkleRoot == uint256S("0x52b6cbd643beaf0b658f10c1e0d0693a1838a7094694cf311dd8d4c368f1a951"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         // vSeeds.push_back(CDNSSeedData("multinncc.org", "seed.multinncc.org", true));
@@ -233,7 +233,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000540f2f62ff9a26"); // 5,900,000
-        consensus.defaultAssumeValid = uint256S("0x00000e409c250e79e80ab4d548847c5b820c214e8c9955763f2254f685b8a817"); // 5,900,000
+        consensus.defaultAssumeValid = uint256S("0x000004bc7124108806ccd780382b3cd4244ba7381bbf10902de3d04805d17f66"); // 5,900,000
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x0024;
@@ -275,13 +275,13 @@ public:
         nDefaultPort = 9422;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1789040712, 135052, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1791596496, 125786, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         minDifficultyConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        assert(consensus.hashGenesisBlock == uint256S("0x00000e409c250e79e80ab4d548847c5b820c214e8c9955763f2254f685b8a817"));
-        assert(genesis.hashMerkleRoot == uint256S("0x0135365529fdb2bf3360318823e2c5eefaacff616b4c8be0f15e229a6d7d5bc2"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000004bc7124108806ccd780382b3cd4244ba7381bbf10902de3d04805d17f66"));
+        assert(genesis.hashMerkleRoot == uint256S("0x52b6cbd643beaf0b658f10c1e0d0693a1838a7094694cf311dd8d4c368f1a951"));
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
@@ -388,12 +388,12 @@ public:
         nDefaultPort = 19555;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1789041260, 2, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1791596792, 0, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        assert(consensus.hashGenesisBlock == uint256S("0x086de8a70d6c35f4f4756f393e77f36e911730d2bfd3c17ae113bc6bcf2d5ea3"));
-        assert(genesis.hashMerkleRoot == uint256S("0x0135365529fdb2bf3360318823e2c5eefaacff616b4c8be0f15e229a6d7d5bc2"));
+        assert(consensus.hashGenesisBlock == uint256S("0x53a3bf2357430b95d93c6c0e34f69ae2d0ccd998f5cfa174f5e2efaeeade100f"));
+        assert(genesis.hashMerkleRoot == uint256S("0x52b6cbd643beaf0b658f10c1e0d0693a1838a7094694cf311dd8d4c368f1a951"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
